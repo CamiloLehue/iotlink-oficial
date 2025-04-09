@@ -29,7 +29,7 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
             <div class="flex justify-center items-center">
                 <Titles title="Servicios" />
             </div>
-            <BorderStylesZinc />
+            <BorderStylesRed />
 
             <p class="py-8 px-5 font-light text-zinc-300">
                 Contamos con un amplio rango de servicios ajustados durante <span
@@ -80,14 +80,14 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                         >
                     </li>
                 </ol>
-                <div class="col-span-3 grid grid-cols-2 mt-20">
+                <div class="relative z-10 col-span-3 flex gap-5 mt-20">
                     <button
-                        class="text-[#ffffff] hover:text-[#02f2ff] px-5 py-1 flex justify-center items-center gap-3 border-e border-[#02ffff95]"
-                        ><Diamond size={12} color="cyan" /> Quiero saber más
+                        class="text-[#02f2ff] hover:text-[#02f2ff] py-1 flex justify-center items-center gap-1 bg-black rounded-full px-6 "
+                        ><Diamond size={12} color="#02f2ff" /> Quiero saber más
                     </button>
                     <button
-                        class="text-[#ffffff] hover:text-[#02f2ff] px-5 py-1 flex justify-center items-center gap-3"
-                        ><Diamond size={12} color="cyan" /> Ver más
+                        class="text-[#ffffff] hover:text-[#02f2ff] py-1 flex justify-center items-center gap-1 bg-black rounded-full px-6 "
+                        ><Diamond size={12} color="#02f2ff" /> Ver más
                     </button>
                 </div>
             </div>
