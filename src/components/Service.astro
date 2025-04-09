@@ -2,31 +2,40 @@
 import { ChevronRight, Diamond } from "@lucide/astro";
 import BorderStylesRed from "./ui/BorderStylesRed.astro";
 import Titles from "./ui/Titles.astro";
+import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
 ---
 
 <section id="service" class="relative max-w-5xl mx-auto bg-[#171619]">
     <div class="grid grid-cols-2 gap-10 min-h-[500px]">
-        <div class="relative p-2 w-full border border-zinc-700">
-            <BorderStylesRed />
-            <img
-                src="service/bg.png"
-                alt="bg"
+        <img
+            src="image.png"
+            alt=""
+            class="absolute right-0 top-0 w-full h-full object-cover z-0 blur-3xl opacity-25"
+        />
+        <div class="relative p-2 w-full">
+            <BorderStylesZinc />
+            <!-- <img
+                src="service/bg2.png"
+                alt="bg4"
                 class="absolute scale-90 left-0 top-0 w-full h-full object-cover rounded-xl blur-3xl opacity-80"
-            />
+            /> -->
             <img
                 src="service/bg.png"
-                alt="bg"
-                class="relative w-full h-full object-cover "
+                alt="bg4"
+                class="relative w-full h-full object-cover"
             />
         </div>
-        <div class="">
+        <div class="relative">
             <div class="flex justify-center items-center">
                 <Titles title="Servicios" />
             </div>
+            <BorderStylesZinc />
 
-            <p class="py-8 px-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-                quaerat explicabo nihil. Nesciunt praesentium, ipsa lore
+            <p class="py-8 px-5 font-light text-zinc-300">
+                Contamos con un amplio rango de servicios ajustados durante <span
+                    class="text-white font-bold">+10 años</span
+                >, enfocados para facilitar la gestión de tu empresa en el mundo
+                digital.
             </p>
             <div class="px-7 grid grid-cols-2">
                 <ol class="py-3 flex flex-col gap-10 font-light text-white">
