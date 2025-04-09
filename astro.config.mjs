@@ -8,6 +8,9 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   vite: {
+    server: {
+      allowedHosts: ['iotlink.cl'],
+    },
     plugins: [tailwindcss()]
   },
 
