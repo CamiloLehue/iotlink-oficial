@@ -4,8 +4,6 @@ import Project from "./Project.astro";
 import Service from "./Service.astro";
 ---
 
-
-
 <img
   id="logo"
   src="logo.webp"
@@ -45,7 +43,7 @@ import Service from "./Service.astro";
         class="relative my-5 clas flex flex-col items-center justify-center gap-1"
       >
         <h1
-          class="text-6xl font-bold bg-gradient-to-r from-[rgb(87,243,165)] to-[#ff2a2a] text-transparent bg-clip-text"
+          class="text-6xl text-center font-bold bg-gradient-to-r from-[rgb(87,243,165)] to-[#ff2a2a] text-transparent bg-clip-text"
         >
           IoT y AI: Innovación Conectada
         </h1>
@@ -54,7 +52,7 @@ import Service from "./Service.astro";
         >
         </div>
         <h4
-          class="text-xl font-light bg-gradient-to-r from-[#ffffff] to-[#b2b2b2] text-transparent bg-clip-text"
+          class="text-center lg:text-left text-xl font-light bg-gradient-to-r from-[#ffffff] to-[#b2b2b2] text-transparent bg-clip-text"
         >
           Automatización, eficiencia y toma de decisiones inteligentes
         </h4>
@@ -64,10 +62,10 @@ import Service from "./Service.astro";
           class="bg-gradient-to-tr from-zinc-300 to-zinc-400 text-transparent bg-clip-text"
           >Se él primero en recibir información.
         </small>
-        <div class="grid grid-cols-2 w-full gap-5">
+        <div class="flex flex-col lg:grid lg:grid-cols-2 w-full gap-5">
           <input
             type="text"
-            class="border border-white/40 text-center bg-gradient-to-tr from-zinc-300 to-zinc-500 text-transparent bg-clip-text rounded-lg ps-2"
+            class="border border-white/40 py-2 text-center bg-gradient-to-tr from-zinc-300 to-zinc-500 text-transparent bg-clip-text rounded-lg ps-2"
             placeholder="correo@iotlink.cl"
           />
           <div class="w-full bg-[#ff020a] p-[1px] rounded-lg hover:opacity-85">

@@ -5,12 +5,15 @@ import Titles from "./ui/Titles.astro";
 import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
 ---
 
-<section id="service" class="relative max-w-5xl mx-auto bg-[#171619]  border-t border-white/10">
+<section
+    id="service"
+    class="relative max-w-5xl mx-auto bg-[#171619] border-t border-white/10"
+>
     <div class="grid grid-cols-2 gap-10 min-h-[500px]">
         <img
             src="image.png"
             alt=""
-            class="absolute right-0 top-0 w-full h-full object-cover z-0 blur-3xl opacity-25"
+            class="absolute right-0 top-0 w-full h-full object-cover z-0 blur-3xl opacity-20"
         />
         <div class="relative p-2 w-full">
             <BorderStylesZinc />
@@ -22,7 +25,7 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
             <img
                 src="service/bg.png"
                 alt="bg4"
-                class="relative w-full h-full object-cover"
+                class="relative w-full h-full object-cover rounded"
             />
         </div>
         <div class="relative">
@@ -40,56 +43,49 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
             <div class="px-7 grid grid-cols-2">
                 <ol class="py-3 flex flex-col gap-10 font-light text-white">
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="cyan" size={14} />IoT
+                        <ChevronRight color="yellow" size={14} />IoT
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="cyan" size={14} />Inteligencia
+                        <ChevronRight color="yellow" size={14} />Inteligencia
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="cyan" size={14} />Wireless
+                        <ChevronRight color="yellow" size={14} />Wireless
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="cyan" size={14} />Data Center
+                        <ChevronRight color="yellow" size={14} />Data Center
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="cyan" size={14} />Seguridad
+                        <ChevronRight color="yellow" size={14} />Seguridad
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="cyan" size={14} />Satelital
+                        <ChevronRight color="yellow" size={14} />Satelital
                     </li>
                 </ol>
                 <ol class="py-3 flex flex-col gap-10 font-light text-white">
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="cyan" size={14} />Energías
+                        <ChevronRight color="yellow" size={14} />Energías
                         Renovables
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="cyan" size={14} />Wisensor
+                        <ChevronRight color="yellow" size={14} />Wisensor
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="cyan" size={14} />Network IP
+                        <ChevronRight color="yellow" size={14} />Network IP
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="cyan" size={14} />Redes
+                        <ChevronRight color="yellow" size={14} />Redes
                     </li>
-                    <li class="flex justify-start items-center gap-2">
-                        <ChevronRight color="cyan" size={14} />IA
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="yellow" size={14} />Aplicaciones
+                    </li>
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="yellow" size={14} />IA
                         <span
-                            class="text-transparent font-extralight text-clip bg-clip-text bg-gradient-to-r from-[#0289ff] to-[#59fd40] border border-[#02ff9aad] rounded-sm px-2"
+                            class="text-transparent mx-2 font-extralight text-clip bg-clip-text bg-gradient-to-r from-[#0289ff] to-[#59fd40] border border-[#02ff9aad] rounded-sm px-2"
                             >Nuevo</span
                         >
                     </li>
                 </ol>
-                <div class="relative z-10 col-span-3 flex gap-5 mt-20">
-                    <button
-                        class="text-[#02f2ff] hover:text-[#02f2ff] py-1 flex justify-center items-center gap-1 bg-black rounded-full px-6 "
-                        ><Diamond size={12} color="#02f2ff" /> Quiero saber más
-                    </button>
-                    <button
-                        class="text-[#ffffff] hover:text-[#02f2ff] py-1 flex justify-center items-center gap-1 bg-black rounded-full px-6 "
-                        ><Diamond size={12} color="#02f2ff" /> Ver más
-                    </button>
-                </div>
             </div>
         </div>
     </div>
