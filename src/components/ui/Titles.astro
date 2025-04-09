@@ -1,0 +1,16 @@
+---
+import BorderStylesZinc from "./BorderStylesZinc.astro";
+
+const { title } = Astro.props;
+---
+
+<div class="relative w-fit">
+    <BorderStylesZinc />
+    <div
+        class="relative z-10 w-fit h-fit flex flex-col justify-center items-center text-white px-5 py-2"
+    >
+        <h5 class="font-extralight text-md uppercase text-[#ff020a] text-nowrap">
+            {title}
+        </h5>
+    </div>
+</div>

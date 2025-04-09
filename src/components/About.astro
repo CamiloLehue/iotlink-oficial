@@ -1,0 +1,71 @@
+---
+import BorderStylesRed from "./ui/BorderStylesRed.astro";
+import Titles from "./ui/Titles.astro";
+---
+
+<section
+    id="about"
+    class="flex flex-col items-center justify-center gap-5 w-full  bg-[#171619] border-t border-b border-white/15"
+>
+    <div
+        class="absolute opacity-40 top-70 left-[20%] -translate-x-1/2 w-[700px] h-[1000px] -skew-12 bg-gradient-to-r from-[#0033ffad] to-[#ff00006d] rounded-full blur-3xl"
+    >
+    </div>
+    <div
+        class="relative w-full h-full mx-auto max-w-4xl min-h-[400px] grid grid-cols-4 text-white"
+    >
+        <BorderStylesRed />
+
+        <div class="flex justify-center items-center">
+            <Titles title="Acerca de Nosotros" />
+        </div>
+
+        <div
+            class="col-span-3 flex flex-col justify-center items-center gap-10"
+        >
+            <img src="logo.webp" alt="logo IOTLink" class="w-30 relative" />
+            <div
+                class="flex flex-col items-center justify-center gap-2 max-w-[550px]"
+            >
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa, repellendus! Obcaecati deleniti laborum quo explicabo
+                    hic quas sed ea tenetur maiores Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Est sapiente deleniti animi!
+                    Ipsam aperiam ad quisquam? Qui, esse. <span
+                        class="font-bold text-red-500"
+                    >
+                        Consequatur, minima repudiandae ipsa corporis ipsam
+                        error natus nobis omnis optio. Eaque?</span
+                    >
+                </p>
+                <p class="text-center">
+                    explicabo hic quas sed ea tenetur maiores, suscipit libero
+                    blanditiis dignissimos harum consequatur voluptatem adipisci
+                    error!
+                </p>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <!-- <div class="relative w-full h-[700px]">
+        <div
+          class="bg-gradient-to-br from-[#0213ff]/40 to-[#fd4b28] p-[1px] w-full mx-auto rounded-xl"
+        >
+          <div
+            class="relative h-[600px] w-full bg-[#efefef] rounded-xl overflow-hidden"
+          >
+            <div class="absolute left-0 top-0 w-full h-[40px] rounded-t-xl p-2">
+              <div
+                class="h-12 bg-zinc-200 rounded-xl flex justify-center items-center"
+              >
+                <small
+                  class="bg-gradient-to-tr from-zinc-500 to-zinc-400 text-transparent bg-clip-text font-semilight"
+                  >https://iotlink.cl</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+</section>

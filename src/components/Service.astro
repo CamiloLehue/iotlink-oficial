@@ -1,0 +1,87 @@
+---
+import { ChevronRight, Diamond } from "@lucide/astro";
+import BorderStylesRed from "./ui/BorderStylesRed.astro";
+import Titles from "./ui/Titles.astro";
+---
+
+<section id="service" class="relative max-w-5xl mx-auto bg-[#171619]">
+    <div class="grid grid-cols-2 gap-10 min-h-[500px]">
+        <div class="relative p-2 w-full border border-zinc-700">
+            <BorderStylesRed />
+            <img
+                src="service/bg.png"
+                alt="bg"
+                class="absolute scale-90 left-0 top-0 w-full h-full object-cover rounded-xl blur-3xl opacity-80"
+            />
+            <img
+                src="service/bg.png"
+                alt="bg"
+                class="relative w-full h-full object-cover "
+            />
+        </div>
+        <div class="">
+            <div class="flex justify-center items-center">
+                <Titles title="Servicios" />
+            </div>
+
+            <p class="py-8 px-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                quaerat explicabo nihil. Nesciunt praesentium, ipsa lore
+            </p>
+            <div class="px-7 grid grid-cols-2">
+                <ol class="py-3 flex flex-col gap-10 font-light text-white">
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="cyan" size={14} />IoT
+                    </li>
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="cyan" size={14} />Inteligencia
+                    </li>
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="cyan" size={14} />Wireless
+                    </li>
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="cyan" size={14} />Data Center
+                    </li>
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="cyan" size={14} />Seguridad
+                    </li>
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="cyan" size={14} />Satelital
+                    </li>
+                </ol>
+                <ol class="py-3 flex flex-col gap-10 font-light text-white">
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="cyan" size={14} />Energías
+                        Renovables
+                    </li>
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="cyan" size={14} />Wisensor
+                    </li>
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="cyan" size={14} />Network IP
+                    </li>
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="cyan" size={14} />Redes
+                    </li>
+                    <li class="flex justify-start items-center gap-2">
+                        <ChevronRight color="cyan" size={14} />IA
+                        <span
+                            class="text-transparent font-extralight text-clip bg-clip-text bg-gradient-to-r from-[#0289ff] to-[#59fd40] border border-[#02ff9aad] rounded-sm px-2"
+                            >Nuevo</span
+                        >
+                    </li>
+                </ol>
+                <div class="col-span-3 grid grid-cols-2 mt-20">
+                    <button
+                        class="text-[#ffffff] hover:text-[#02f2ff] px-5 py-1 flex justify-center items-center gap-3 border-e border-[#02ffff95]"
+                        ><Diamond size={12} color="cyan" /> Quiero saber más
+                    </button>
+                    <button
+                        class="text-[#ffffff] hover:text-[#02f2ff] px-5 py-1 flex justify-center items-center gap-3"
+                        ><Diamond size={12} color="cyan" /> Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

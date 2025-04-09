@@ -1,0 +1,335 @@
+---
+import BorderStylesRed from "./ui/BorderStylesRed.astro";
+import Titles from "./ui/Titles.astro";
+import {
+    ShieldCheck,
+    ScanFace,
+    Siren,
+    Wifi,
+    ChevronsRight,
+    ArrowUpRight,
+} from "@lucide/astro";
+---
+
+<section id="project" class="bg-[#171619] relative">
+    <div class="max-w-5xl mx-auto">
+        <Titles title="Productos" />
+    </div>
+    <div
+        class="relative flex z-20 flex-row gap-[2%] space-y-5 flex-wrap max-w-5xl mx-auto mt-5 rounded-2xl py-5"
+    >
+        <div
+            class="relative border border-zinc-800 hover:border-[#ff020a24] py-5 hover:bg-gradient-to-bl px-5 hover:from-[#ff020a24] h-[3%] min-h-70 w-[50%]"
+        >
+            <BorderStylesRed />
+            <div
+                class="relative z-10 w-full h-full flex flex-col justify-center items-start p-5"
+            >
+                <h2 class="text-blue-50">Míneria Control Remote</h2>
+                <small class="font-light">Control remoto </small>
+                <div class="my-5 px-5">
+                    <ol
+                        class="text-sm text-blue-50 flex flex-col items-start gap-3"
+                    >
+                        <li class="flex justify-center items-center gap-2">
+                            <ShieldCheck color="#fff" size={14} />Prevención de
+                            incidentes
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <ScanFace color="#fff" size={14} />Seguridad
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <Siren color="#fff" size={14} />Alertas y
+                            notificaciones
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <Wifi color="#fff" size={14} />Control Remote
+                        </li>
+                    </ol>
+                </div>
+                <div class="flex justify-center w-full gap-2">
+                    <button
+                        class="relative group text-white font-light hover:text-[#ff020a] bg-[#ff020a] rounded-2xl p-[0.8px]"
+                    >
+                        <div
+                            class="bg-[#171619] rounded-2xl px-1.5 py-0.5 pe-5 shadow-xl flex justify-center items-center gap-3"
+                        >
+                            <div
+                                class="h-5 w-5 bg-[#ff020a] text-white group-hover:text-[#ff020a] group-hover:bg-white rounded-full flex justify-center items-center"
+                            >
+                                <ChevronsRight size={15} />
+                            </div>
+                            Saber más
+                        </div>
+                    </button>
+                    <button
+                        class="relative group text-[#c9c9c9] font-light hover:text-[#ff020a] bg-[#483e3f] rounded-2xl p-[0.8px]"
+                    >
+                        <div
+                            class="bg-[#171619] rounded-2xl px-1.5 py-0.5 pe-5 shadow-xl flex justify-center items-center gap-3"
+                        >
+                            <div
+                                class="h-5 w-5 bg-[#484444] group-hover:bg-white rounded-full flex justify-center items-center"
+                            >
+                                <ArrowUpRight size={15} />
+                            </div>
+                            Demo
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="relative border border-zinc-800 hover:border-[#02b7ff38] h-[3%] py-5 hover:bg-gradient-to-bl px-5 hover:from-[#02b7ff38] min-h-70 w-[40%] grow"
+        >
+            <BorderStylesRed />
+            <div
+                class="relative z-10 w-full h-full flex flex-col justify-center items-start p-5"
+            >
+                <h2 class="text-blue-50">Clíma</h2>
+                <small class="font-light"> Wisensor </small>
+                <div class="my-5 px-5">
+                    <ol
+                        class="text-sm text-blue-50 flex flex-col items-start gap-3"
+                    >
+                        <li class="flex justify-center items-center gap-2">
+                            <ShieldCheck color="#fff" size={14} />Prevención de
+                            incidentes
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <ScanFace color="#fff" size={14} />Seguridad
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <Siren color="#fff" size={14} />Alertas y
+                            notificaciones
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <Wifi color="#fff" size={14} />Control Remote
+                        </li>
+                    </ol>
+                </div>
+                <div class="flex justify-center w-full gap-2">
+                    <button
+                        class="relative group text-white font-light hover:text-[#ff020a] bg-[#ff020a] rounded-2xl p-[0.8px]"
+                    >
+                        <div
+                            class="bg-[#171619] rounded-2xl px-1.5 py-0.5 pe-5 shadow-xl flex justify-center items-center gap-3"
+                        >
+                            <div
+                                class="h-5 w-5 bg-[#ff020a] text-white group-hover:text-[#ff020a] group-hover:bg-white rounded-full flex justify-center items-center"
+                            >
+                                <ChevronsRight size={15} />
+                            </div>
+                            Saber más
+                        </div>
+                    </button>
+                    <button
+                        class="relative group text-[#c9c9c9] font-light hover:text-[#ff020a] bg-[#483e3f] rounded-2xl p-[0.8px]"
+                    >
+                        <div
+                            class="bg-[#171619] rounded-2xl px-1.5 py-0.5 pe-5 shadow-xl flex justify-center items-center gap-3"
+                        >
+                            <div
+                                class="h-5 w-5 bg-[#484444] group-hover:bg-white rounded-full flex justify-center items-center"
+                            >
+                                <ArrowUpRight size={15} />
+                            </div>
+                            Demo
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="relative border border-zinc-800 hover:border-[#56ff0224] h-[3%] py-5 hover:bg-gradient-to-bl px-5 hover:from-[#56ff0224] min-h-70"
+        >
+            <BorderStylesRed />
+            <div
+                class="relative z-10 w-full h-full flex flex-col justify-center items-start p-5"
+            >
+                <h2 class="text-blue-50">Energía</h2>
+                <small class="font-light"> Wisensor</small>
+                <div class="my-5 px-5">
+                    <ol
+                        class="text-sm text-blue-50 flex flex-col items-start gap-3"
+                    >
+                        <li class="flex justify-center items-center gap-2">
+                            <ShieldCheck color="#fff" size={14} />Prevención de
+                            incidentes
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <ScanFace color="#fff" size={14} />Seguridad
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <Siren color="#fff" size={14} />Alertas y
+                            notificaciones
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <Wifi color="#fff" size={14} />Control Remote
+                        </li>
+                    </ol>
+                </div>
+                <div class="flex justify-center w-full gap-2">
+                    <button
+                        class="relative group text-white font-light hover:text-[#ff020a] bg-[#ff020a] rounded-2xl p-[0.8px]"
+                    >
+                        <div
+                            class="bg-[#171619] rounded-2xl px-1.5 py-0.5 pe-5 shadow-xl flex justify-center items-center gap-3"
+                        >
+                            <div
+                                class="h-5 w-5 bg-[#ff020a] text-white group-hover:text-[#ff020a] group-hover:bg-white rounded-full flex justify-center items-center"
+                            >
+                                <ChevronsRight size={15} />
+                            </div>
+                            Saber más
+                        </div>
+                    </button>
+                    <button
+                        class="relative group text-[#c9c9c9] font-light hover:text-[#ff020a] bg-[#483e3f] rounded-2xl p-[0.8px]"
+                    >
+                        <div
+                            class="bg-[#171619] rounded-2xl px-1.5 py-0.5 pe-5 shadow-xl flex justify-center items-center gap-3"
+                        >
+                            <div
+                                class="h-5 w-5 bg-[#484444] group-hover:bg-white rounded-full flex justify-center items-center"
+                            >
+                                <ArrowUpRight size={15} />
+                            </div>
+                            Demo
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="relative border border-zinc-800 hover:border-[#ee02ff38] h-[3%] py-5 hover:bg-gradient-to-bl px-5 hover:from-[#ee02ff38] min-h-70 grow"
+        >
+            <BorderStylesRed />
+            <div
+                class="relative z-10 w-full h-full flex flex-col justify-center items-start p-5"
+            >
+                <h2 class="text-blue-50">
+                    Administración Remota Salmones Austral
+                </h2>
+                <small class="font-light"> Wisensor</small>
+                <div class="my-5 px-5">
+                    <ol
+                        class="text-sm text-blue-50 flex flex-col items-start gap-3"
+                    >
+                        <li class="flex justify-center items-center gap-2">
+                            <ShieldCheck color="#fff" size={14} />Prevención de
+                            incidentes
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <ScanFace color="#fff" size={14} />Seguridad
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <Siren color="#fff" size={14} />Alertas y
+                            notificaciones
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <Wifi color="#fff" size={14} />Control Remote
+                        </li>
+                    </ol>
+                </div>
+                <div class="flex justify-center w-full gap-2">
+                    <button
+                        class="relative group text-white font-light hover:text-[#ff020a] bg-[#ff020a] rounded-2xl p-[0.8px]"
+                    >
+                        <div
+                            class="bg-[#171619] rounded-2xl px-1.5 py-0.5 pe-5 shadow-xl flex justify-center items-center gap-3"
+                        >
+                            <div
+                                class="h-5 w-5 bg-[#ff020a] text-white group-hover:text-[#ff020a] group-hover:bg-white rounded-full flex justify-center items-center"
+                            >
+                                <ChevronsRight size={15} />
+                            </div>
+                            Saber más
+                        </div>
+                    </button>
+                    <button
+                        class="relative group text-[#c9c9c9] font-light hover:text-[#ff020a] bg-[#483e3f] rounded-2xl p-[0.8px]"
+                    >
+                        <div
+                            class="bg-[#171619] rounded-2xl px-1.5 py-0.5 pe-5 shadow-xl flex justify-center items-center gap-3"
+                        >
+                            <div
+                                class="h-5 w-5 bg-[#484444] group-hover:bg-white rounded-full flex justify-center items-center"
+                            >
+                                <ArrowUpRight size={15} />
+                            </div>
+                            Demo
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- <div
+            class="relative border border-zinc-800 h-[3%] py-5 hover:bg-gradient-to-bl px-5 hover:from-[#ff020a24] min-h-70 grow"
+        >
+            <BorderStylesRed />
+            <div
+                class="relative z-10 w-full h-full flex flex-col justify-center items-start p-5"
+            >
+                <h2 class="text-blue-50">Wisensor</h2>
+                <small class="font-light">Arsa </small>
+                <div class="my-5 px-5">
+                    <ol
+                        class="text-sm text-blue-50 flex flex-col items-start gap-3"
+                    >
+                        <li class="flex justify-center items-center gap-2">
+                            <ShieldCheck color="#fff" size={14} />Prevención de
+                            incidentes
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <ScanFace color="#fff" size={14} />Seguridad
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <Siren color="#fff" size={14} />Alertas y
+                            notificaciones
+                        </li>
+                        <li class="flex justify-center items-center gap-2">
+                            <Wifi color="#fff" size={14} />Control Remote
+                        </li>
+                    </ol>
+                </div>
+                <div class="flex justify-center w-full gap-2">
+                    <button
+                        class="relative group text-white font-light hover:text-[#ff020a] bg-[#ff020a] rounded-2xl p-[0.8px]"
+                    >
+                        <div
+                            class="bg-[#171619] rounded-2xl px-1.5 py-0.5 pe-5 shadow-xl flex justify-center items-center gap-3"
+                        >
+                            <div
+                                class="h-5 w-5 bg-[#ff020a] text-white group-hover:text-[#ff020a] group-hover:bg-white rounded-full flex justify-center items-center"
+                            >
+                                <ChevronsRight size={15} />
+                            </div>
+                            Saber más
+                        </div>
+                    </button>
+                    <button
+                        class="relative group text-[#c9c9c9] font-light hover:text-[#ff020a] bg-[#483e3f] rounded-2xl p-[0.8px]"
+                    >
+                        <div
+                            class="bg-[#171619] rounded-2xl px-1.5 py-0.5 pe-5 shadow-xl flex justify-center items-center gap-3"
+                        >
+                            <div
+                                class="h-5 w-5 bg-[#484444] group-hover:bg-white rounded-full flex justify-center items-center"
+                            >
+                                <ArrowUpRight size={15} />
+                            </div>
+                            Demo
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="flex justify-center py-5">
+        <button class="mt-5 text-white hover:text-[#ff020a] border-b"
+            >Ver más</button
+        >
+    </div>
+</section>
