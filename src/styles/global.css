@@ -97,14 +97,15 @@
   }
 
   section {
-    @apply py-26 min-h-[300px]
+    @apply py-30 min-h-[400px]
   }
 
   button {
     @apply cursor-pointer transition-all duration-200 outline-none active:outline-none focus:outline-none
   }
+
   input {
-    @apply outline-none active:outline-none focus:outline-none 
+    @apply outline-none active:outline-none focus:outline-none
   }
 
   h5 {
