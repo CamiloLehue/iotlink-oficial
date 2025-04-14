@@ -8,32 +8,33 @@ import Service from "./Service.astro";
   id="logo"
   src="logo.webp"
   alt="logo IOTLink"
-  class="logo fixed left-[50%] -translate-x-1/2 top-50 z-0 w-50 opacity-95"
+  class="logo fixed left-[50%] -translate-x-1/2 top-50 z-0 w-30 opacity-95"
+  style={{ animation: "logo 1s " }}
 />
 <main class="relative w-full py-10 mt-90 pb-10">
   <div
-    class="absolute left-[50%] -translate-x-1/2 rounded-full blur-2xl w-[800px] h-[150px] bg-[#ff040052]"
+    class="absolute left-[50%] -translate-x-1/2 rounded-full blur-2xl w-[800px] h-[50px] bg-[#ff0000]"
   >
   </div>
   <div
-    class="absolute -top-10 left-[50%] -translate-x-1/2 rounded-full w-[500px] h-[500px] bg-gradient-to-r from-[#ca0a37] via-[#9500ff] to-[#7b00ff] blur-3xl"
+    class="absolute -top-10 left-[50%] -translate-x-1/2 rounded-full w-[500px] h-[500px] bg-gradient-to-r from-[#ffc400] via-[#ff0000] to-[#ffc400] blur-3xl"
   >
   </div>
   <div
-    class="relative max-w-6xl mx-auto bg-[#171619] h-full border-t border-t-[#ef5257] pt-20"
+    class="relative max-w-6xl mx-auto bg-[#171619] h-full border-t border-t-[#ff0000] pt-20"
   >
     <section
       id="hero"
       class="relative flex flex-col items-center justify-center"
     >
       <div
-        class="p-[0.8px] bg-gradient-to-bl from-[#ef5257] to-[#09baf0] rounded-full"
+        class="p-[0.8px] bg-gradient-to-bl from-[#52d5ef] to-[#09baf0] rounded-full"
       >
         <div
           class="bg-gradient-to-l from-[#010001] to-[#190013] rounded-full px-5 shadow"
         >
           <h4
-            class="text-sm py-0.5 font-light bg-gradient-to-r from-[#52d0ef] to-[#ef5257] text-transparent bg-clip-text"
+            class="text-sm py-0.5 bg-gradient-to-r from-[#feffff] to-[#ffdadb] text-transparent bg-clip-text"
           >
             Te Presentamos IOTLink Tecnologías
           </h4>
@@ -42,10 +43,14 @@ import Service from "./Service.astro";
       <div
         class="relative my-5 clas flex flex-col items-center justify-center gap-1"
       >
-        <h1
-          class="text-6xl text-center font-bold bg-gradient-to-r from-[rgb(87,243,165)] to-[#ff2a2a] text-transparent bg-clip-text"
+        <span
+          class="text-center font-bold bg-gradient-to-r from-[rgb(255,220,235)] to-[#979bb1] text-transparent bg-clip-text"
+          >IoT y AI:</span
         >
-          IoT y AI: Innovación Conectada
+        <h1
+          class="text-7xl text-center font-bold bg-gradient-to-r from-[rgb(255,220,235)] to-[#979bb1] text-transparent bg-clip-text"
+        >
+          Innovación Conectada
         </h1>
         <div
           class="absolute left-1 -top-20 bg-[#9a1010] h-[400px] w-[400px] rounded-full opacity-10 blur-3xl"
@@ -94,5 +99,51 @@ azul: #224cff
 skyblue: #00cbff
 skylightblue: #00cbff
 -->
+<script>
+  const SCROLL_THRESHOLD = 20;
+  const SCALE_SMALL = 0.8;
+  const SCALE_LARGE = 1.2;
+  const TRANSITION = "transform 0.3s ease-in-out";
 
-<style></style>
+  function handleScroll() {
+    const logo = document.getElementById("logo");
+    if (!logo) return;
+    
+    const scrollTop = window.scrollY;
+    logo.style.transition = TRANSITION;
+    logo.style.transform = `scale(${scrollTop > SCROLL_THRESHOLD ? SCALE_SMALL : SCALE_LARGE})`;
+  }
+
+  // Eventos de desplazamiento de aceleración
+  let ticking = false;
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        handleScroll();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  // Estado inicial
+  handleScroll();
+
+  // Cleanup - Limpieza de eventos
+  document.addEventListener("astro:before-swap", () => {
+    window.removeEventListener("scroll", handleScroll);
+  });
+</script>
+<style>
+  @keyframes logo {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>

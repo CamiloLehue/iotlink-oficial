@@ -7,87 +7,251 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
 
 <section
     id="service"
-    class="relative max-w-5xl mx-auto bg-[#171619] border-t border-white/10"
+    class="relative mx-auto bg-[#171619] border-t border-white/10"
 >
-    <div class="grid grid-cols-2 gap-10 min-h-[500px]">
-        <img
-            src="image.png"
-            alt=""
-            class="absolute right-0 top-0 w-full h-full object-cover z-0 blur-3xl opacity-20"
-        />
-        <div class="relative p-2 w-full">
-            <BorderStylesZinc />
-            <!-- <img
-                src="service/bg2.png"
-                alt="bg4"
-                class="absolute scale-90 left-0 top-0 w-full h-full object-cover rounded-xl blur-3xl opacity-80"
-            /> -->
-            <img
-                src="service/bg.png"
-                alt="bg4"
-                class="relative w-full h-full object-cover rounded"
-            />
-        </div>
+    <img
+        src="service/bg.jpeg"
+        alt="bg4"
+        draggable="false"
+        class="absolute scale-150 left-0 top-50 w-full h-[calc(100%-700px)] object-cover rounded-xl blur-3xl opacity-80"
+    />
+    <div
+        class="flex flex-col justify-start items-center w-full gap-10 min-h-[500px]"
+    >
         <div class="relative">
             <div class="flex justify-center items-center">
                 <Titles title="Servicios" />
             </div>
-            <BorderStylesRed />
+            <!-- <BorderStylesRed /> -->
 
-            <p class="py-8 px-5 font-light text-zinc-300">
+            <p class="py-8 px-5 font-light text-zinc-300 text-center">
                 Contamos con un amplio rango de servicios ajustados durante <span
                     class="text-white font-bold">+10 años</span
                 >, enfocados para facilitar la gestión de tu empresa en el mundo
                 digital.
             </p>
-            <div class="px-7 grid grid-cols-2">
+            <div
+                class="grid grid-cols-6 gap-5 px-5 w-[calc(100%-400px)] mx-auto text-zinc-100"
+            >
+                <div class="relative col-span-2">
+                    <BorderStylesRed />
+                    <div
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                    >
+                        <span class="uppercase font-extrabold">IOT</span>
+                        <span
+                            class="font-light text-center text-xs text-zinc-300"
+                            >Conecta dispositivos y automatiza procesos con
+                            soluciones inteligentes.</span
+                        >
+                    </div>
+                </div>
+                <div class="relative col-span-2">
+                    <BorderStylesRed />
+                    <div
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                    >
+                        <span class="uppercase font-extrabold"
+                            >Inteligencia</span
+                        >
+                        <span
+                            class="font-light text-center text-xs text-zinc-300"
+                        >
+                            Sistemas avanzados para análisis de datos y
+                            decisiones automatizadas.</span
+                        >
+                    </div>
+                </div>
+                <div class="relative col-span-2">
+                    <BorderStylesRed />
+                    <div
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                    >
+                        <span class="uppercase font-extrabold">Wireless</span>
+                        <span
+                            class="font-light text-center text-xs text-zinc-300"
+                            >Redes inalámbricas rápidas, estables y seguras.</span
+                        >
+                    </div>
+                </div>
+                <div class="relative col-span-3">
+                    <BorderStylesRed />
+                    <div
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                    >
+                        <span class="uppercase font-extrabold">Data Center</span
+                        >
+                        <span
+                            class="font-light text-center text-xs text-zinc-300"
+                        >
+                            Infraestructura escalable y de alto rendimiento para
+                            tus datos.</span
+                        >
+                    </div>
+                </div>
+                <div class="relative col-span-3">
+                    <BorderStylesRed />
+                    <div
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                    >
+                        <span class="uppercase font-extrabold">Seguridad</span>
+                        <span
+                            class="font-light text-center text-xs text-zinc-300"
+                        >
+                            Protección integral contra amenazas digitales.</span
+                        >
+                    </div>
+                </div>
+                <div class="relative col-span-2">
+                    <BorderStylesRed />
+                    <div
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                    >
+                        <span class="uppercase font-extrabold">Satelital</span>
+                        <span
+                            class="font-light text-center text-xs text-zinc-300"
+                        >
+                            Conectividad global en zonas remotas.</span
+                        >
+                    </div>
+                </div>
+                <div class="relative col-span-2">
+                    <BorderStylesRed />
+                    <div
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                    >
+                        <span class="uppercase font-extrabold"
+                            >Energías Renovables</span
+                        >
+                        <span
+                            class="font-light text-center text-xs text-zinc-300"
+                        >
+                            Soluciones sostenibles para eficiencia energética.
+                        </span>
+                    </div>
+                </div>
+                <div class="relative col-span-2">
+                    <BorderStylesRed />
+                    <div
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                    >
+                        <span class="uppercase font-extrabold">Network IP</span>
+                        <span
+                            class="font-light text-center text-xs text-zinc-300"
+                        >
+                            Redes IP robustas para comunicación empresarial.</span
+                        >
+                    </div>
+                </div>
+                <div class="relative col-span-6">
+                    <BorderStylesRed />
+                    <div
+                        class="font-primary bg-[#a1a2c419] flex flex-col items-center justify-center p-5 border-dotted h-50 border-[#000000ad]"
+                    >
+                        <span
+                            class="uppercase font-extrabold text-2xl text-[#ffe9e9]"
+                            >Wisensor</span
+                        >
+                        <span
+                            class="font-light text-center text-xs text-zinc-300"
+                        >
+                            Sensores inteligentes para monitoreo en tiempo real.</span
+                        >
+                    </div>
+                </div>
+
+                <div class="relative col-span-3">
+                    <BorderStylesRed />
+                    <div
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                    >
+                        <span class="uppercase font-extrabold">Redes</span>
+                        <span
+                            class="font-light text-center text-xs text-zinc-300"
+                        >
+                            Diseño e implementación de infraestructura de
+                            conectividad.</span
+                        >
+                    </div>
+                </div>
+                <div class="relative col-span-3">
+                    <BorderStylesRed />
+                    <div
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                    >
+                        <span class="uppercase font-extrabold"
+                            >Aplicaciones</span
+                        >
+                        <span
+                            class="font-light text-center text-xs text-zinc-300"
+                        >
+                            Desarrollo de software a medida para tus
+                            necesidades.</span
+                        >
+                    </div>
+                </div>
+                <div class="relative col-span-6">
+                    <BorderStylesRed />
+                    <div
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                    >
+                        <span class="uppercase font-extrabold">IA</span>
+                        <span
+                            class="font-light text-center text-xs text-zinc-300"
+                        >
+                            Inteligencia Artificial para optimizar procesos.</span
+                        >
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="px-7 grid grid-cols-2">
                 <ol class="py-3 flex flex-col gap-10 font-light text-white">
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="yellow" size={14} />IoT
+                        <ChevronRight color="#ffc002ad" size={14} />IoT
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="yellow" size={14} />Inteligencia
+                        <ChevronRight color="#ffc002ad" size={14} />Inteligencia
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="yellow" size={14} />Wireless
+                        <ChevronRight color="#ffc002ad" size={14} />Wireless
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="yellow" size={14} />Data Center
+                        <ChevronRight color="#ffc002ad" size={14} />Data Center
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="yellow" size={14} />Seguridad
+                        <ChevronRight color="#ffc002ad" size={14} />Seguridad
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="yellow" size={14} />Satelital
+                        <ChevronRight color="#ffc002ad" size={14} />Satelital
                     </li>
                 </ol>
                 <ol class="py-3 flex flex-col gap-10 font-light text-white">
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="yellow" size={14} />Energías
+                        <ChevronRight color="#ffc002ad" size={14} />Energías
                         Renovables
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="yellow" size={14} />Wisensor
+                        <ChevronRight color="#ffc002ad" size={14} />Wisensor
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="yellow" size={14} />Network IP
+                        <ChevronRight color="#ffc002ad" size={14} />Network IP
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="yellow" size={14} />Redes
+                        <ChevronRight color="#ffc002ad" size={14} />Redes
                     </li>
                     <li class="flex justify-start items-center">
-                        <ChevronRight color="yellow" size={14} />Aplicaciones
+                        <ChevronRight color="#ffc002ad" size={14} />Aplicaciones
                     </li>
-                    <li class="flex justify-start items-center gap-2">
-                        <ChevronRight color="yellow" size={14} />IA
+                    <li class="flex justify-start items-center">
+                        <ChevronRight color="#ffc002ad" size={14} />IA
                         <span
-                            class="text-transparent  font-extralight text-clip bg-clip-text bg-gradient-to-r from-[#0289ff] to-[#59fd40] border border-[#02ff9aad] rounded-sm px-2"
+                            class="text-xs uppercase py-1 text-transparent mx-1 font-bold text-clip bg-clip-text bg-gradient-to-r from-[#ff02c0] to-[#fdfa40] border border-[#ffc002ad] rounded-sm px-2"
                         >
                             Nuevo
                         </span>
                     </li>
                 </ol>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
