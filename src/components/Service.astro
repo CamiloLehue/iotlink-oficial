@@ -1,8 +1,7 @@
 ---
-import { ChevronRight, Diamond } from "@lucide/astro";
-import BorderStylesRed from "./ui/BorderStylesRed.astro";
 import Titles from "./ui/Titles.astro";
 import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
+import BorderStylesBlue from "./ui/BorderStylesBlue.astro";
 ---
 
 <section
@@ -10,10 +9,10 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
     class="relative mx-auto bg-[#171619] border-t border-white/10"
 >
     <img
-        src="service/bg.jpeg"
+        src="service/bgone.png"
         alt="bg4"
         draggable="false"
-        class="absolute scale-150 left-0 top-50 w-full h-[calc(100%-700px)] object-cover rounded-xl blur-3xl opacity-80"
+        class="absolute scale-150 left-0 top-50 w-full h-[calc(100%-500px)] object-cover rounded-xl blur-3xl opacity-40"
     />
     <div
         class="flex flex-col justify-start items-center w-full gap-10 min-h-[500px]"
@@ -22,7 +21,7 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
             <div class="flex justify-center items-center">
                 <Titles title="Servicios" />
             </div>
-            <!-- <BorderStylesRed /> -->
+            <!-- <BorderStylesBlue /> -->
 
             <p class="py-8 px-5 font-light text-zinc-300 text-center">
                 Contamos con un amplio rango de servicios ajustados durante <span
@@ -34,9 +33,9 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                 class="grid grid-cols-6 gap-5 px-5 w-[calc(100%-400px)] mx-auto text-zinc-100"
             >
                 <div class="relative col-span-2">
-                    <BorderStylesRed />
+                    <BorderStylesBlue />
                     <div
-                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#013b81a8] bg-black/20 h-full"
                     >
                         <span class="uppercase font-extrabold">IOT</span>
                         <span
@@ -47,9 +46,9 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                     </div>
                 </div>
                 <div class="relative col-span-2">
-                    <BorderStylesRed />
+                    <BorderStylesBlue />
                     <div
-                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#013b81a8] bg-black/20 h-full"
                     >
                         <span class="uppercase font-extrabold"
                             >Inteligencia</span
@@ -63,9 +62,9 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                     </div>
                 </div>
                 <div class="relative col-span-2">
-                    <BorderStylesRed />
+                    <BorderStylesBlue />
                     <div
-                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#013b81a8] bg-black/20 h-full"
                     >
                         <span class="uppercase font-extrabold">Wireless</span>
                         <span
@@ -75,9 +74,9 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                     </div>
                 </div>
                 <div class="relative col-span-3">
-                    <BorderStylesRed />
+                    <BorderStylesBlue />
                     <div
-                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#013b81a8] bg-black/20 h-full"
                     >
                         <span class="uppercase font-extrabold">Data Center</span
                         >
@@ -90,9 +89,9 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                     </div>
                 </div>
                 <div class="relative col-span-3">
-                    <BorderStylesRed />
+                    <BorderStylesBlue />
                     <div
-                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#013b81a8] bg-black/20 h-full"
                     >
                         <span class="uppercase font-extrabold">Seguridad</span>
                         <span
@@ -103,9 +102,9 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                     </div>
                 </div>
                 <div class="relative col-span-2">
-                    <BorderStylesRed />
+                    <BorderStylesBlue />
                     <div
-                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#013b81a8] bg-black/20 h-full"
                     >
                         <span class="uppercase font-extrabold">Satelital</span>
                         <span
@@ -116,9 +115,9 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                     </div>
                 </div>
                 <div class="relative col-span-2">
-                    <BorderStylesRed />
+                    <BorderStylesBlue />
                     <div
-                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#013b81a8] bg-black/20 h-full"
                     >
                         <span class="uppercase font-extrabold"
                             >Energías Renovables</span
@@ -131,9 +130,9 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                     </div>
                 </div>
                 <div class="relative col-span-2">
-                    <BorderStylesRed />
+                    <BorderStylesBlue />
                     <div
-                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#013b81a8] bg-black/20 h-full"
                     >
                         <span class="uppercase font-extrabold">Network IP</span>
                         <span
@@ -144,16 +143,16 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                     </div>
                 </div>
                 <div class="relative col-span-6">
-                    <BorderStylesRed />
+                    <BorderStylesBlue />
                     <div
-                        class="font-primary bg-[#a1a2c419] flex flex-col items-center justify-center p-5 border-dotted h-50 border-[#000000ad]"
+                        class="font-primary bg-[#181da68d] flex flex-col items-center justify-center p-5 border h-50 border-[#25abff54]"
                     >
                         <span
-                            class="uppercase font-extrabold text-2xl text-[#ffe9e9]"
+                            class="uppercase font-extrabold text-2xl text-[#376cff]"
                             >Wisensor</span
                         >
                         <span
-                            class="font-light text-center text-xs text-zinc-300"
+                            class="font-light text-center text-xs text-[#a0baff]"
                         >
                             Sensores inteligentes para monitoreo en tiempo real.</span
                         >
@@ -161,9 +160,9 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                 </div>
 
                 <div class="relative col-span-3">
-                    <BorderStylesRed />
+                    <BorderStylesBlue />
                     <div
-                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#013b81a8] bg-black/20 h-full"
                     >
                         <span class="uppercase font-extrabold">Redes</span>
                         <span
@@ -175,9 +174,9 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                     </div>
                 </div>
                 <div class="relative col-span-3">
-                    <BorderStylesRed />
+                    <BorderStylesBlue />
                     <div
-                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#013b81a8] bg-black/20 h-full"
                     >
                         <span class="uppercase font-extrabold"
                             >Aplicaciones</span
@@ -191,9 +190,9 @@ import BorderStylesZinc from "./ui/BorderStylesZinc.astro";
                     </div>
                 </div>
                 <div class="relative col-span-6">
-                    <BorderStylesRed />
+                    <BorderStylesBlue />
                     <div
-                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#b12a2aad] bg-black/20 h-full"
+                        class="font-primary flex flex-col items-center justify-center p-5 border border-[#013b81a8] bg-black/20 h-full"
                     >
                         <span class="uppercase font-extrabold">IA</span>
                         <span
