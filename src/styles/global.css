@@ -141,7 +141,7 @@
 
 @layer base {
   a {
-    @apply hover:text-[#0073ff] transition-all duration-200
+    @apply hover:text-[#f3f0e7] transition-all duration-400
   }
 
   section {

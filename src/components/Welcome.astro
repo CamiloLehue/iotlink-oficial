@@ -4,14 +4,63 @@ import Project from "./Project.astro";
 import Service from "./Service.astro";
 ---
 
+<div id="hero" class="w-full h-full max-h-[700px] overflow-hidden mt-3 px-10">
+  <div
+    style={{ animation: "heroAnimate 20s linear" }}
+    class="heroAnimate fixed grid grid-cols-4 gap-1 w-full mx-auto"
+  >
+    <div class="relative">
+      <img
+        src="hero/hero_3.png"
+        alt=""
+        class="w-full h-full min-h-[600px] object-cover rounded-lg"
+      />
+      <div
+        class="absolute left-0 bottom-0 bg-gradient-to-t from-zinc-900 from-30% h-full w-full"
+      >
+      </div>
+    </div>
+    <div class="relative col-span-2">
+      <img
+        src="hero/hero_2.png"
+        alt=""
+        class="w-full h-full min-h-[600px] object-cover rounded-lg"
+      />
+      <div
+        class="absolute left-0 bottom-0 bg-gradient-to-t from-zinc-900 from-30% h-full w-full"
+      >
+      </div>
+    </div>
+
+    <div class="relative">
+      <img
+        src="hero/hero_4.png"
+        alt=""
+        class="w-full h-full min-h-[600px] object-cover rounded-lg"
+      />
+      <div
+        class="absolute left-0 bottom-0 bg-gradient-to-t from-zinc-900 from-30% h-full w-full"
+      >
+      </div>
+    </div>
+  </div>
+</div>
 <img
   id="logo"
   src="logo.webp"
   alt="logo IOTLink"
-  class="logo fixed left-[50%] -translate-x-1/2 top-50 z-0 w-30 opacity-95"
+  class="logo fixed left-[50%] -translate-x-1/2 top-70 z-0 w-40 opacity-95"
   style={{ animation: "logo 1s " }}
 />
-<main class="relative w-full py-10 mt-90 pb-10">
+<mai
+n
+  style={{ animation: "logo 1s " }}
+  class="relative w-full py-10 pb-10 -mt-50"
+>
+  <div
+    class="absolute left-0 top-0 bg-gradient-to-t from-zinc-900 from-85% h-full w-full"
+  >
+  </div>
   <div
     class="absolute left-[50%] -translate-x-1/2 rounded-full blur-2xl w-[800px] h-[50px] bg-[#0044ff]"
   >
@@ -22,7 +71,7 @@ import Service from "./Service.astro";
   >
   </div>
   <div
-    class="relative max-w-6xl mx-auto bg-[#171619] h-full border-t border-t-[#0073ff]"
+    class="relative max-w-6xl mx-auto bg-[#171619] rounded-t-3xl h-full border-t border-t-[#0073ff]"
   >
     <!-- <div class="line-speed"></div> -->
     <section
@@ -89,7 +138,7 @@ import Service from "./Service.astro";
   <Project />
   <Service />
   <About />
-</main>
+</mai>
 
 <!-- 
 
@@ -105,15 +154,24 @@ skylightblue: #00cbff
   const SCROLL_THRESHOLD = 20;
   const SCALE_SMALL = 0.8;
   const SCALE_LARGE = 1.2;
+  const SCALE_LARGE_HERO = 1;
   const TRANSITION = "transform 0.3s ease-in-out";
+  const TRANSITION_HERO = "transform 0.6s ease-in-out";
 
   function handleScroll() {
     const logo = document.getElementById("logo");
-    if (!logo) return;
+    const hero = document.getElementById("hero");
+    if (!logo || !hero) return;
 
     const scrollTop = window.scrollY;
     logo.style.transition = TRANSITION;
-    logo.style.transform = `scale(${scrollTop > SCROLL_THRESHOLD ? SCALE_SMALL : SCALE_LARGE})`;
+    logo.style.transform = `scale(${
+      scrollTop > SCROLL_THRESHOLD ? SCALE_SMALL : SCALE_LARGE
+    })`;
+    hero.style.transition = TRANSITION_HERO;
+    hero.style.transform = `scale(${
+      scrollTop > SCROLL_THRESHOLD ? SCALE_SMALL : SCALE_LARGE_HERO
+    })`;
   }
 
   // Eventos de desplazamiento de aceleración
@@ -144,7 +202,7 @@ skylightblue: #00cbff
     background-color: red;
     height: 3px;
     width: 3px;
-    animation: lineSpeed 20s ;
+    animation: lineSpeed 20s;
   }
 
   @keyframes lineSpeed {
@@ -177,11 +235,7 @@ skylightblue: #00cbff
       bottom: 0;
       right: 0;
     }
-    
   }
-
-
-
 
   @keyframes logo {
     0% {
