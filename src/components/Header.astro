@@ -2,12 +2,13 @@
   class="fixed font-primary top-0 z-50 p-2 w-full mx-auto h-35 flex justify-start items-start bg-gradient-to-b from-black to-transparent"
 >
   <nav
+    id="navbar"
     class="w-full px-10 rounded-lg text-[#bbbaaf] bg-blue-100/10 backdrop-blur-2xl py-7 flex justify-start items-center gap-5"
   >
     <a href="/">
-      <img src="logo.webp" alt="logo IOTLink" class="w-25 relative" /></a
-    >
-    <ul class="flex text-[14px] font-medium">
+      <img src="logo.webp" alt="logo IOTLink" class="w-25 relative" />
+    </a>
+    <ul class="text-[14px] font-medium lg:flex hidden">
       <li>
         <a
           class="py-2 hover:bg-zinc-500/20 rounded mx-1 px-7 text-[#fffef1]"
@@ -29,12 +30,82 @@
           >Acerca de nosotros</a
         >
       </li>
-      <li>
-        <a class="py-2 hover:bg-zinc-500/20 rounded mx-1 px-7" href="#contact"
-          >Contacto</a
-        >
-      </li>
     </ul>
   </nav>
+
+  <div>
+    <nav
+      id="nav-mobile"
+      class="hidden fixed top-0 left-0 w-full h-screen bg-blue-100/10 backdrop-blur-2xl"
+    >
+      <button id="close-menu" class="absolute top-10 right-4 text-white p-2">
+        <span class="sr-only">Close menu</span>
+        ✕
+      </button>
+      <ul class="flex flex-col text-[14px] font-medium pt-16 px-4">
+        <li>
+          <a
+            class="block py-2 hover:bg-zinc-500/20 rounded mx-1 px-7 text-[#fffef1]"
+            href="#">Inicio</a
+          >
+        </li>
+        <li>
+          <a
+            class="block py-2 hover:bg-zinc-500/20 rounded mx-1 px-7"
+            href="#project">Productos</a
+          >
+        </li>
+        <li>
+          <a
+            class="block py-2 hover:bg-zinc-500/20 rounded mx-1 px-7"
+            href="#service">Servicios</a
+          >
+        </li>
+        <li>
+          <a
+            class="block py-2 hover:bg-zinc-500/20 rounded mx-1 px-7"
+            href="#about">Acerca de nosotros</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <button id="menu-toggle" class="lg:hidden fixed top-4 right-4 text-white p-2">
+    <span class="sr-only">Open menu</span>
+    ☰
+  </button>
 </header>
 
+<script>
+  const navbar = document.getElementById("navbar");
+  const navMobile = document.getElementById("nav-mobile");
+  const menuToggle = document.getElementById("menu-toggle");
+  const closeMenu = document.getElementById("close-menu");
+
+  function checkWidth() {
+    const currentWidth = window.innerWidth;
+    if (!navbar || !navMobile || !menuToggle || !closeMenu) return;
+
+    if (currentWidth < 700) {
+      navbar.classList.add("hidden");
+      menuToggle.classList.remove("hidden");
+    } else {
+      navbar.classList.remove("hidden");
+      menuToggle.classList.add("hidden");
+      navMobile.classList.add("hidden");
+    }
+  }
+
+  checkWidth();
+
+  window.addEventListener("resize", checkWidth);
+
+  menuToggle?.addEventListener("click", () => {
+    navMobile?.classList.remove("hidden");
+  });
+
+  closeMenu?.addEventListener("click", () => {
+    navMobile?.classList.add("hidden");
+  });
+</script>

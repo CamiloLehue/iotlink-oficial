@@ -3,51 +3,45 @@ import BorderStylesRed from "./ui/BorderStylesRed.astro";
 import Titles from "./ui/Titles.astro";
 ---
 
-<section
-    id="about"
-    class="w-full bg-[#171619] border-t border-white/10 "
->
-    
-    <div
-        class="relative w-full h-full mx-auto max-w-4xl grid grid-cols-4 text-white"
-    >
-        <BorderStylesRed />
+<section id="about" class="w-full bg-[#171619] border-t border-white/10">
+  <div
+    class="relative w-full h-full mx-auto max-w-4xl lg:grid lg:grid-cols-4 flex flex-col gap-5 text-white"
+  >
+    <BorderStylesRed />
 
-        <div class="flex justify-center items-center">
-            <Titles title="Acerca de Nosotros" />
-        </div>
-
-        <div
-            class="col-span-3 flex flex-col justify-center items-center gap-10 text-zinc-300"
-        >
-            <img src="logo.webp" alt="logo IOTLink" class="w-30 relative" />
-            <div
-                class="flex flex-col items-center justify-center gap-10 max-w-[550px]"
-            >
-                <p class="text-center font-light">
-                    IoT Link es una empresa con más de <span
-                        class="text-[#ff2a2a]">15 años de experiencia</span
-                    > en Telecomunicaciones e IoT, destacándose por su innovación
-                    (I+D) y adaptabilidad tecnológica. Hemos evolucionado desde proveer
-                    conectividad básica hasta ofrecer <span
-                        class="font-bold text-white"
-                        >soluciones integrales, incluyendo redes inteligentes,
-                        comunicaciones inalámbricas, seguridad IoT y
-                        automatización industrial</span
-                    >, posicionándonos como líderes en conectividad avanzada.
-                </p>
-                <p class="text-center font-thin">
-                    "Ante la demanda de soluciones ágiles y escalables, nos
-                    enfocamos en desarrollar tecnologías disruptivas para todo
-                    tipo de necesidades de conectividad —IoT, satelital o
-                    inalámbrica— junto con software especializado, impulsando un
-                    mundo más interconectado."
-                </p>
-            </div>
-            <div></div>
-        </div>
+    <div class="flex justify-center items-center">
+      <Titles title="Acerca de Nosotros" />
     </div>
-    <!-- <div class="relative w-full h-[700px]">
+
+    <div
+      class="col-span-3 flex flex-col justify-center items-center gap-10 text-zinc-300"
+    >
+      <img src="logo.webp" alt="logo IOTLink" class="w-30 relative" />
+      <div
+        class="flex flex-col items-center justify-center gap-10 max-w-[550px]"
+      >
+        <p class="text-center font-light">
+          IoT Link es una empresa con más de <span class="text-[#ff2a2a]"
+            >15 años de experiencia</span
+          > en Telecomunicaciones e IoT, destacándose por su innovación (I+D) y adaptabilidad
+          tecnológica. Hemos evolucionado desde proveer conectividad básica hasta
+          ofrecer <span class="font-bold text-white"
+            >soluciones integrales, incluyendo redes inteligentes,
+            comunicaciones inalámbricas, seguridad IoT y automatización
+            industrial</span
+          >, posicionándonos como líderes en conectividad avanzada.
+        </p>
+        <p class="text-center font-thin">
+          "Ante la demanda de soluciones ágiles y escalables, nos enfocamos en
+          desarrollar tecnologías disruptivas para todo tipo de necesidades de
+          conectividad —IoT, satelital o inalámbrica— junto con software
+          especializado, impulsando un mundo más interconectado."
+        </p>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <!-- <div class="relative w-full h-[700px]">
         <div
           class="bg-gradient-to-br from-[#0213ff]/40 to-[#fd4b28] p-[1px] w-full mx-auto rounded-xl"
         >

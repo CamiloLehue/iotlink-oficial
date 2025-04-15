@@ -52,8 +52,7 @@ import Service from "./Service.astro";
   class="logo fixed left-[50%] -translate-x-1/2 top-70 z-0 w-40 opacity-95"
   style={{ animation: "logo 1s " }}
 />
-<mai
-n
+<main
   style={{ animation: "logo 1s " }}
   class="relative w-full py-10 pb-10 -mt-50"
 >
@@ -138,7 +137,7 @@ n
   <Project />
   <Service />
   <About />
-</mai>
+</main>
 
 <!-- 
 
@@ -155,8 +154,8 @@ skylightblue: #00cbff
   const SCALE_SMALL = 0.8;
   const SCALE_LARGE = 1.2;
   const SCALE_LARGE_HERO = 1;
-  const TRANSITION = "transform 0.3s ease-in-out";
-  const TRANSITION_HERO = "transform 0.6s ease-in-out";
+  const TRANSITION = "transform 0.6s ease-in-out";
+  const TRANSITION_HERO = "transform 0.2s ease-in-out";
 
   function handleScroll() {
     const logo = document.getElementById("logo");
@@ -168,6 +167,7 @@ skylightblue: #00cbff
     logo.style.transform = `scale(${
       scrollTop > SCROLL_THRESHOLD ? SCALE_SMALL : SCALE_LARGE
     })`;
+    
     hero.style.transition = TRANSITION_HERO;
     hero.style.transform = `scale(${
       scrollTop > SCROLL_THRESHOLD ? SCALE_SMALL : SCALE_LARGE_HERO
