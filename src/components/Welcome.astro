@@ -16,13 +16,15 @@ import Service from "./Service.astro";
     class="absolute left-[50%] -translate-x-1/2 rounded-full blur-2xl w-[800px] h-[50px] bg-[#0044ff]"
   >
   </div>
+
   <div
     class="absolute -top-10 left-[50%] -translate-x-1/2 rounded-full w-[500px] h-[500px] bg-gradient-to-r from-[#0044ff] via-[#0095ff] to-[#0077ff] blur-3xl"
   >
   </div>
   <div
-    class="relative max-w-6xl mx-auto bg-[#171619] h-full border-t border-t-[#0073ff] pt-20"
+    class="relative max-w-6xl mx-auto bg-[#171619] h-full border-t border-t-[#0073ff]"
   >
+    <!-- <div class="line-speed"></div> -->
     <section
       id="hero"
       class="relative flex flex-col items-center justify-center"
@@ -135,6 +137,52 @@ skylightblue: #00cbff
   });
 </script>
 <style>
+  .line-speed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    height: 3px;
+    width: 3px;
+    animation: lineSpeed 20s ;
+  }
+
+  @keyframes lineSpeed {
+    0% {
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 5px;
+    }
+    25% {
+      left: 100%;
+      top: 0;
+      width: 2px;
+      height: 5px;
+    }
+    50% {
+      left: 100%;
+      top: 0;
+      width: 0;
+      height: 50%;
+    }
+    75% {
+      left: 100%;
+      top: 100%;
+      width: 3%;
+    }
+    100% {
+      width: 0;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+    }
+    
+  }
+
+
+
+
   @keyframes logo {
     0% {
       transform: scale(1);
