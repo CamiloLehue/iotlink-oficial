@@ -24,7 +24,7 @@ import Service from "./Service.astro";
       <img
         src="hero/hero_2.png"
         alt=""
-        class="w-full h-full min-h-[600px] object-cover rounded-lg"
+        class="w-full h-full lg:min-h-[600px] object-cover rounded-lg"
       />
       <div
         class="absolute left-0 bottom-0 bg-gradient-to-t from-zinc-900 from-30% h-full w-full"
@@ -36,7 +36,7 @@ import Service from "./Service.astro";
       <img
         src="hero/hero_4.png"
         alt=""
-        class="w-full h-full min-h-[600px] object-cover rounded-lg"
+        class="w-full h-full lg:min-h-[600px] object-cover rounded-lg"
       />
       <div
         class="absolute left-0 bottom-0 bg-gradient-to-t from-zinc-900 from-30% h-full w-full"
@@ -61,12 +61,12 @@ import Service from "./Service.astro";
   >
   </div>
   <div
-    class="absolute left-[50%] -translate-x-1/2 rounded-full blur-2xl w-[800px] h-[50px] bg-[#0044ff]"
+    class="absolute left-[50%] -translate-x-1/2 rounded-full blur-2xl lg:w-[800px] h-[50px] bg-[#0044ff]"
   >
   </div>
 
   <div
-    class="absolute -top-10 left-[50%] -translate-x-1/2 rounded-full w-[500px] h-[500px] bg-gradient-to-r from-[#0044ff] via-[#0095ff] to-[#0077ff] blur-3xl"
+    class="absolute -top-10 left-[50%] -translate-x-1/2 rounded-full lg:w-[500px] lg:h-[500px] bg-gradient-to-r from-[#0044ff] via-[#0095ff] to-[#0077ff] blur-3xl"
   >
   </div>
   <div
@@ -103,7 +103,7 @@ import Service from "./Service.astro";
           Innovación Conectada
         </h1>
         <div
-          class="absolute left-1 -top-20 bg-[#0073ff] h-[400px] w-[400px] rounded-full opacity-10 blur-3xl"
+          class="absolute left-1 -top-20 bg-[#0073ff] lg:h-[400px] lg:w-[400px] rounded-full opacity-10 blur-3xl"
         >
         </div>
         <h4
@@ -167,7 +167,7 @@ skylightblue: #00cbff
     logo.style.transform = `scale(${
       scrollTop > SCROLL_THRESHOLD ? SCALE_SMALL : SCALE_LARGE
     })`;
-    
+
     hero.style.transition = TRANSITION_HERO;
     hero.style.transform = `scale(${
       scrollTop > SCROLL_THRESHOLD ? SCALE_SMALL : SCALE_LARGE_HERO
